@@ -36,7 +36,7 @@ if prompt := st.chat_input("How can I help you today?"):
             model='gemini-2.5-flash',
             contents=prompt,
             config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
+                system_instruction=None,
                 temperature=0.0,
                 safety_settings=[
                     types.SafetySetting(
